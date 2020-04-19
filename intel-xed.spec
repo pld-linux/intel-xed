@@ -1,20 +1,21 @@
 Summary:	Intel X86 Encoder Decoder (Intel XED)
 Summary(pl.UTF-8):	Dekoder/koder rozkazów procesorów Intel X86 (Intel XED)
 Name:		intel-xed
-Version:	11.0.1
-Release:	2
+Version:	11.2.0
+Release:	1
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/intelxed/xed/releases
 Source0:	https://github.com/intelxed/xed/archive/%{version}/xed-%{version}.tar.gz
-# Source0-md5:	79d1b08fce1b20042c604df52ac192a5
-%define	mbuild_gitref	f2de5e93ac318e223f6ec61c41f541171db0ada7
-%define	mbuild_snap	20190524
+# Source0-md5:	2d97a58940cc77dce3265eecfe0f6102
+%define	mbuild_gitref	5304b94361fccd830c0e2417535a866b79c1c297
+%define	mbuild_snap	20200415
 Source1:	https://github.com/intelxed/mbuild/archive/%{mbuild_gitref}/mbuild-%{mbuild_snap}.tar.gz
-# Source1-md5:	ab8443e971e321968390261ddcd4a43f
+# Source1-md5:	0030f59df0525ede314c9658e330572b
 Patch0:		xed-default-abi.patch
 URL:		https://github.com/intelxed/xed
 BuildRequires:	python3 >= 1:3
+BuildRequires:	python3-distro
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
