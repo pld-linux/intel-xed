@@ -14,7 +14,7 @@ Source1:	https://github.com/intelxed/mbuild/archive/%{mbuild_gitref}/mbuild-%{mb
 # Source1-md5:	eee2670dffb07806d6fd43d1c028ab56
 Patch0:		xed-default-abi.patch
 URL:		https://github.com/intelxed/xed
-BuildRequires:	python3 >= 1:3
+BuildRequires:	python3 >= 1:3.8
 BuildRequires:	python3-distro
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
