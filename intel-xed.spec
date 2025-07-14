@@ -39,7 +39,7 @@ Pliki nagłówkowe bibliotek Intel XED.
 %prep
 %setup -q -n xed-%{version} -a1
 %{__mv} mbuild-%{mbuild_date} mbuild
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 PYTHONPATH=$(pwd)/mbuild \
